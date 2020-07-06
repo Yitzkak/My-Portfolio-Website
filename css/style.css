@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Beth+Ellen&display=swap");
+/* font-family: 'Architects Daughter', cursive;
+font-family: 'Beth Ellen', cursive;
+ */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+html, body {
+  font-family: "Architects Daughter", cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3px 40px;
+  position: relative;
+}
+
+header .straigth-line {
+  width: 100%;
+  position: absolute;
+  background-color: #ff5757;
+  height: 3px;
+  left: 0;
+  top: 0;
+}
+
+header .logo {
+  height: 100%;
+  -webkit-box-flex: 5;
+      -ms-flex-positive: 5;
+          flex-grow: 5;
+  padding: 5px 20px;
+  text-align: center;
+}
+
+header .logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 80px;
+  position: relative;
+}
+
+header .nav li {
+  list-style: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  cursor: pointer;
+}
+
+header .nav a {
+  color: #1d1f20;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+header .nav li:first-child a {
+  color: #ff5757;
+}
+
+header .nav li:hover a {
+  color: #ff5757;
+}
+
+header .nav .underline {
+  position: absolute;
+  background-color: #ff5757;
+  height: 2.5px;
+  width: 25%;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+header .nav li:nth-child(1):hover ~ .underline {
+  left: 0;
+  background-color: #ff5757;
+}
+
+header .nav li:nth-child(2):hover ~ .underline {
+  background-color: #ff5757;
+  left: 25%;
+}
+
+header .nav li:nth-child(3):hover ~ .underline {
+  background-color: #ff5757;
+  left: 50%;
+}
+
+header .nav li:nth-child(4):hover ~ .underline {
+  background-color: #ff5757;
+  left: 75%;
+}
+
+section {
+  width: 100%;
+  background-color: #f2f2f24f;
+  height: 78vh;
+}
+
+section .text-zone {
+  font-family: "Architects Daughter", cursive;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .text-zone__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+}
+
+section .text-zone__skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+section .text-zone__skills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 20px 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .text-zone__skills ul li {
+  list-style: none;
+  padding: 20px;
+}
+
+section .text-zone__skills ul li:nth-child(even) {
+  font-size: 50px;
+}
+
+section .text-zone__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .text-zone__button a {
+  color: #ff5757;
+  -webkit-box-flex: space-between;
+      -ms-flex: space-between;
+          flex: space-between;
+  padding: 10px 5px;
+  border: 1px solid #ff5757;
+  width: 160px;
+  text-align: center;
+  margin-right: 15px;
+  background-color: #fff;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+section .text-zone__button a:hover {
+  color: #fff;
+  background-color: #ff5757;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  left: 0;
+  bottom: 0;
+  -webkit-box-shadow: 0 14px 20px black;
+          box-shadow: 0 14px 20px black;
+}
+
+footer .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  background-color: #fff;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer__copyright {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  text-align: center;
+}
+
+footer .footer__social {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer__social li {
+  list-style: none;
+  margin-left: 20px;
+  line-height: 48px;
+  padding: 0px 5px;
+  cursor: pointer;
+}
+
+footer .footer__social li a {
+  font-size: 18px;
+  color: #333;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+footer .footer__social li:hover a {
+  color: #ff5757;
+}

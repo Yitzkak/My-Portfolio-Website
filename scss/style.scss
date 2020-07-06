@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Beth+Ellen&display=swap');
+
+$primary-font-stack: "Poppins", sans-serif;
+$secondary-font-stack: 'Architects Daughter', cursive;
+
+/* font-family: 'Architects Daughter', cursive;
+font-family: 'Beth Ellen', cursive;
+ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body{
+    font-family: $secondary-font-stack;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    padding: 3px 40px;
+    position: relative;
+
+.straigth-line{
+    width: 100%;
+    position: absolute;
+    background-color: #ff5757;
+    height: 3px;
+    left: 0;
+    top: 0;
+}
+
+
+    .logo{
+        height: 100%;
+        flex-grow: 5;
+        padding: 5px 20px;
+        text-align: center;
+
+        img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    .nav{
+        display:flex;
+        flex-grow: 3;
+        justify-content: center;
+        align-items: center;
+        line-height: 80px;
+        position: relative;
+        
+        li{
+            list-style: none;
+            flex: 1;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        a{
+            color: #1d1f20;
+            transition: color 0.3s ease-in-out;
+        }
+
+        
+        li:first-child a{
+            color: #ff5757;
+        }
+
+        li:hover a{
+            color: #ff5757;
+        }
+
+        .underline{
+            position: absolute;
+            background-color: #ff5757;
+            height: 2.5px;
+            width: 25%;
+            top: 0;
+            left: 0;
+            transition: 0.3s all ease;
+            
+          
+        }   
+
+        li:nth-child(1):hover ~ .underline{
+            left:0;
+            background-color: #ff5757;
+        }  
+
+        li:nth-child(2):hover ~ .underline{
+            background-color: #ff5757;
+            left: 25%;
+        }
+
+        li:nth-child(3):hover ~ .underline{
+            background-color: #ff5757;
+            left: 50%;
+        } 
+        li:nth-child(4):hover ~ .underline{
+            background-color: #ff5757;
+            left: 75%;
+        } 
+        
+    }  
+}
+
+section{
+   width: 100%;
+   background-color: #f2f2f24f;
+    height: 78vh;
+
+    .text-zone{
+        font-family: $secondary-font-stack;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__text{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+
+        &__skills{
+            display: flex;
+            width: 100%;
+
+            ul{
+                display: flex;
+                width: 100%;
+                padding: 20px 0px;
+                justify-content: center;
+                align-items: center;
+
+                li{ 
+                    list-style: none;
+                    padding: 20px;
+                }
+
+                li:nth-child(even){
+                    font-size: 50px;
+                }
+            } 
+        }
+
+        &__button{
+            display: flex;
+            width: 100%;   
+            justify-content: center; 
+            align-items: center; 
+            
+            a{
+                color: #ff5757;
+                flex: space-between;
+                padding: 10px 5px;
+                border: 1px solid #ff5757;
+                width: 160px;
+                text-align: center;
+                margin-right: 15px;
+                background-color: #fff;
+                transition: background-color 0.3s ease;
+            }
+
+            a:hover{
+                color:#fff;
+                background-color: #ff5757;
+            }
+
+        }
+    }   
+}
+
+
+footer{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: 0;
+    bottom: 0;
+    box-shadow: 0 14px 20px rgba(0, 0, 0,25);
+
+    .footer{
+        display: flex;
+        font-size: 14px;
+        background-color: #fff;
+        height: 100%;
+        align-items: center;
+       
+
+
+        &__copyright{
+            flex: 5; 
+            text-align: center;
+        }
+    
+        &__social{
+            flex: 5;
+            display: flex;
+            justify-content: center;
+
+            li{
+                list-style: none;
+                margin-left: 20px;
+                line-height: 48px;
+                padding: 0px 5px;
+                cursor: pointer;
+
+                a{
+                    font-size: 18px;
+                    color: #333;
+                    transition: color 0.5s ease;
+                }
+            }
+
+            li:hover a{
+                color: #ff5757;
+            }
+        }
+    }
+}
+
